@@ -10,11 +10,19 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendi
 
 ## Contexte du Projet
 
-Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.
+Aujourd’hui, la stabilité des robots mobiles est un enjeu crucial dans de nombreux domaines, notamment la robotique autonome, l’industrie et la recherche en ingénierie. Un robot capable de s’auto-stabiliser peut naviguer sur des terrains accidentés, éviter les chutes et améliorer sa performance dans divers environnements. De ce fait, elle a plusieurs domaines d'application comme :
+
+    -Robotique mobile : Amélioration des robots autonomes pour la livraison ou l’exploration.
+    -Domaines industriels : Développement de robots capables de travailler en environnements instables.
+    -Santé et assistance : Aide aux personnes en mobilité réduite (exosquelettes, fauteuils roulants intelligents).
+    -Éducation et recherche : Expérimentation sur les algorithmes de contrôle et la stabilisation dynamique.
 
 ## Objectifs du Projet
 
-Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede.
+    -Concevoir un robot à deux roues capable de s’auto-stabiliser
+    -Utiliser un ESP32 pour la gestion du robot et l’acquisition des données des capteurs
+    -Implémenter un algorithme de stabilisation basé sur un contrôle PID
+    -Assurer la communication entre les capteurs et le microcontrôleur
 
 # Existant
 
