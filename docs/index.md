@@ -18,13 +18,6 @@ Introduction:
 
 Les robots à auto-stabilisation illustrent parfaitement l’application des systèmes de contrôle avancés en robotique. Ce projet propose de concevoir un robot à deux roues capable de maintenir son équilibre et de se déplacer de manière autonome. L’ESP32 sera utilisé comme unité de traitement centrale pour lire les données des capteurs inertiels (IMU) et ajuster en temps réel l’inclinaison du robot via un algorithme de contrôle PID.
 Nous travailleront sur la conception mécanique du châssis, la programmation du microcontrôleur, l’implémentation des algorithmes de stabilisation et l’intégration des capteurs et moteurs. Le projet pourra évoluer vers l’ajout de fonctionnalités comme la télécommande ou l’évitement d’obstacles.
-
-Objectifs principaux :
-
-    -Concevoir un robot à deux roues capable de s’auto-stabiliser
-    -Utiliser un ESP32 pour la gestion du robot et l’acquisition des données des capteurs
-    -Implémenter un algorithme de stabilisation basé sur un contrôle PID
-    -Assurer la communication entre les capteurs et le microcontrôleur
     
 Contraintes techniques :
 
