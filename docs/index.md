@@ -4,9 +4,9 @@ nav_order: 1
 title: Accueil
 ---
 
-# Bienvenue sur notre documentation
+# Documentation du projet N°8 
 
-Bienvenue dans la documentation du projet 8. Ce site a pour but de fournir toutes les informations nécessaires pour comprendre, utiliser et reproduire efficacement notre projet.
+Bienvenue dans la documentation du projet 8. Ce site a pour objectif de centraliser toutes les informations essentielles pour comprendre, utiliser et reproduire efficacement notre projet. Vous y trouverez des explications claires, des instructions détaillées ainsi que les ressources nécessaires à sa bonne prise en main.
 
 ![Illustration vectorielle colorée avec un fond blanc, montrant un atelier équipé pour un projet de conception mécanique, électronique et informatique](docs/images/Image 31 mars 2025, 11_24_21.png)
 
@@ -44,8 +44,6 @@ Ce projet permet d’explorer les bases du contrôle dynamique, de la robotique 
 
 
 
-![Poster projet]https://makerspace-amiens.fr/projets/projets_I3/2025/balancing-robot/image.png
-
 ## Vidéo
 
 Ici vous publierez la vidéo de votre projet. 
@@ -55,7 +53,7 @@ Ici vous publierez la vidéo de votre projet.
 - Des vues du projet / Prototype / Application etc... 
 - Des plans du fonctionnement (même basique ou des éléments séparés)
 - Une conclusion
-- Si en stockage local : <50mo
+- Si en stockage local : >50mo
 
 <video src="images/intro_amiens.mp4" controls title="Title"  style="width: 100%;"></video>
 
