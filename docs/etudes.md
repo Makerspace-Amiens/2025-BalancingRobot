@@ -13,8 +13,7 @@ Le terme PID vient des trois composantes principales de ce régulateur :
 
   . P pour Proportionnel
 
-  . I pour Intégral
-
+  . I pour Intégal
   . D pour Dérivé
 
 Chacune de ces actions a un rôle bien précis :
