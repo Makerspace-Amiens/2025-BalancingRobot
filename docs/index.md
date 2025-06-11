@@ -8,7 +8,7 @@ title: Accueil
 
 Bienvenue dans la documentation du projet 8. Ce site a pour but de fournir toutes les informations nécessaires pour comprendre, utiliser et reproduire efficacement notre projet.
 
-![Illustration vectorielle colorée avec un fond blanc, montrant un atelier équipé pour un projet de conception mécanique, électronique et informatique](images/illustration.png)
+![Illustration vectorielle colorée avec un fond blanc, montrant un atelier équipé pour un projet de conception mécanique, électronique et informatique](docs/images/Image 31 mars 2025, 11_24_21.png)
 
 ## À propos du Projet
 Ce projet vise à concevoir et fabriquer un robot à deux roues capable de s’auto-stabiliser grâce à des capteurs inertiels (accéléromètres et gyroscopes). L’objectif est d’expérimenter les principes de la stabilisation dynamique et du contrôle en boucle fermée en utilisant un ESP32 pour le traitement des données et la commande des moteurs
