@@ -27,7 +27,7 @@ Vous trouverez ci-dessous le programme de notre projet:
     
     const int MOTOR2_DIR = D7;
 
-MPU6050 mpu;
+    MPU6050 mpu;
 
 // PID pour la stabilisation
 
@@ -74,7 +74,7 @@ MPU6050 mpu;
             sumY += gy;
             
             delay(2);
-      }
+             }
     
             gyroBiasY = sumY / (float)numSamples;
               
@@ -122,7 +122,7 @@ MPU6050 mpu;
       return angle;
      
       //return gy;
-}
+    }
 
 
 
@@ -156,7 +156,7 @@ void setup() {
             Serial.println("Erreur : MPU6050 non détecté !");
             
             while (1);
-          }
+              }
         
           calibrateMPU();
          /*
@@ -170,14 +170,14 @@ void setup() {
             setMotor(100,true,MOTOR2_DIR,MOTOR2_PWM);
             
             delay(500);
-          }
+              }
         */
           pid.SetMode(AUTOMATIC);
           
           pid.SetOutputLimits(-90, 90);
         
           Serial.println("Initialisation terminée !");
-        }
+            }
 
 
 
@@ -222,7 +222,7 @@ void loop() {
         setMotor(pwm, forward, MOTOR1_DIR, MOTOR1_PWM);
         
         setMotor(pwm, forward, MOTOR2_DIR, MOTOR2_PWM);
-  }
+      }
 
   // Affichage pour le débogage
   
@@ -236,4 +236,4 @@ void loop() {
       Serial.println(output);
     
     delay(20); // Fréquence de mise à jour
-}
+    }
