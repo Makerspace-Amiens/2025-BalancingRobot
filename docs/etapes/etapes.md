@@ -136,48 +136,48 @@ MPU6050 mpu;
 
 void setup() {
 
-  Serial.begin(115200);
+          Serial.begin(115200);
 
  
-  pinMode(MOTOR1_PWM, OUTPUT);
-
-  pinMode(MOTOR1_DIR, OUTPUT);
-  
-  pinMode(MOTOR2_PWM, OUTPUT);
-  
-  pinMode(MOTOR2_DIR, OUTPUT);
-
-  Wire.begin();
-  
-  mpu.initialize();
-  
-  if (!mpu.testConnection()) {
-  
-    Serial.println("Erreur : MPU6050 non détecté !");
-    
-    while (1);
-  }
-
-  calibrateMPU();
- /*
-  
-  while(1){
-  
-    Serial.println(getFilteredAngle(),DEC);
-    
-    setMotor(100,true,MOTOR1_DIR,MOTOR1_PWM);
-    
-    setMotor(100,true,MOTOR2_DIR,MOTOR2_PWM);
-    
-    delay(500);
-  }
-*/
-  pid.SetMode(AUTOMATIC);
-  
-  pid.SetOutputLimits(-90, 90);
-
-  Serial.println("Initialisation terminée !");
-}
+          pinMode(MOTOR1_PWM, OUTPUT);
+        
+          pinMode(MOTOR1_DIR, OUTPUT);
+          
+          pinMode(MOTOR2_PWM, OUTPUT);
+          
+          pinMode(MOTOR2_DIR, OUTPUT);
+        
+          Wire.begin();
+          
+          mpu.initialize();
+          
+          if (!mpu.testConnection()) {
+          
+            Serial.println("Erreur : MPU6050 non détecté !");
+            
+            while (1);
+          }
+        
+          calibrateMPU();
+         /*
+          
+          while(1){
+          
+            Serial.println(getFilteredAngle(),DEC);
+            
+            setMotor(100,true,MOTOR1_DIR,MOTOR1_PWM);
+            
+            setMotor(100,true,MOTOR2_DIR,MOTOR2_PWM);
+            
+            delay(500);
+          }
+        */
+          pid.SetMode(AUTOMATIC);
+          
+          pid.SetOutputLimits(-90, 90);
+        
+          Serial.println("Initialisation terminée !");
+        }
 
 
 
