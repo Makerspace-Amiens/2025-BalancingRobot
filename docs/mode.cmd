@@ -1,7 +1,7 @@
 ---
 layout: default
 nav_order: 5
-title: Mode d'emploi
+title: Modes d'emploi
 ---
  I. Préparation et Vérification Pré-Opérationnelle
 
