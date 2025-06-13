@@ -57,30 +57,44 @@ MPU6050 mpu;
 
 // Fonctions utilitaires
 
-    void calibrateMPU() {
-      Serial.println("Calibration du gyroscope...");
-      const int numSamples = 1000;
-      long sumY = 0;
-    
-      for (int i = 0; i < numSamples; i++) {
-        int16_t gx, gy, gz;
-        mpu.getRotation(&gx, &gy, &gz);
-        sumY += gy;
-        delay(2);
+        void calibrateMPU() {
+        
+          Serial.println("Calibration du gyroscope...");
+          
+          const int numSamples = 1000;
+          
+          long sumY = 0;
+
+          for (int i = 0; i < numSamples; i++) {
+            
+            int16_t gx, gy, gz;
+            
+            mpu.getRotation(&gx, &gy, &gz);
+            
+            sumY += gy;
+            
+            delay(2);
       }
     
-      gyroBiasY = sumY / (float)numSamples;
-      Serial.println("Calibration terminée !");
-    }
-    
-    void setMotor(int pwm, bool forward, int motorDirPin, int motorPwmPin) {
-      pwm = constrain(pwm, 0, 255);
-      digitalWrite(motorDirPin, forward ? LOW : HIGH);
-      analogWrite(motorPwmPin, pwm);
-    }
-    float getFilteredAngle() {
-      int16_t ax, ay, az, gx, gy, gz;
-      mpu.getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
+            gyroBiasY = sumY / (float)numSamples;
+              
+            Serial.println("Calibration terminée !");
+            }
+            
+            void setMotor(int pwm, bool forward, int motorDirPin, int motorPwmPin) {
+            
+              pwm = constrain(pwm, 0, 255);
+              
+              digitalWrite(motorDirPin, forward ? LOW : HIGH);
+              
+              analogWrite(motorPwmPin, pwm);
+            }
+           
+            float getFilteredAngle() {
+            
+              int16_t ax, ay, az, gx, gy, gz;
+              
+              mpu.getMotion6(&ax, &ay, &az, &gx, &gy, &gz);
 
   // Calcul de l'angle avec l'accéléromètre
  
@@ -92,9 +106,13 @@ MPU6050 mpu;
 
   // Filtre complémentaire
  
+     
      unsigned long currentTime = millis();
+     
       float dt = (lastTime == 0) ? 0.01f : (currentTime - lastTime) / 1000.0f; // 10 ms par défaut au premier appel
+      
       lastTime = currentTime;
+      
       if (dt <= 0.0f || dt > 0.2f) dt = 0.01f; // Sécurité sur dt
 
   // Filtre complémentaire (98% gyro, 2% accéléro)
@@ -102,6 +120,7 @@ MPU6050 mpu;
       angle = 0.98f * (angle + gyroRate * dt) + 0.02f * accelAngle;
 
       return angle;
+     
       //return gy;
 }
 
