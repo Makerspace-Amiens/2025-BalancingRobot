@@ -49,6 +49,6 @@ Ce projet permet d’explorer les bases du contrôle dynamique, de la robotique 
 Ici vous trouverez la vidéo de notre projet. 
 
 
-<video src="C:\Users\Lenovo\Downloads\Vidéo Projet I3.mp4" controls title="Title"  style="width: 100%;"></video>
+<video src="C:\Users\Lenovo\Download\Vidéo Projet I3.mp4" controls title="Title"  style="width: 100%;"></video>
 
 ---
