@@ -1,8 +1,9 @@
 ---
 layout: default
-nav_order: 5
+nav_order: 7
 title: Modes d'emploi
 ---
+
  I. Préparation et Vérification Pré-Opérationnelle
 
     Vérification de l'Assemblage :
