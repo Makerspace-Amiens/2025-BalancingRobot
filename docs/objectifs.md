@@ -24,10 +24,19 @@ Aujourd’hui, la stabilité des robots mobiles est un enjeu crucial dans de nom
     -Implémenter un algorithme de stabilisation basé sur un contrôle PID
     -Assurer la communication entre les capteurs et le microcontrôleur
 
-# Existant
-
-Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio.
 
 # Cahier des Charges
 
-Nam dui ligula, fringilla a, euismod sodales, sollicitudin vel, wisi. Morbi auctor lorem non justo. Nam lacus libero, pretium at, lobortis vitae, ultricies et, tellus.
+Contraintes techniques :
+    . Utiliser un système électronique pour contrôler l’ensemble du robot.
+    . Intégrer un capteur permettant de connaître l’orientation et les mouvements du robot.
+    . Mettre en place une méthode permettant au robot de rester en équilibre de façon stable et réactive.
+    . Faire fonctionner le robot sur batterie, avec une autonomie suffisante pour une utilisation pratique.
+
+Livrables attendus :
+    . Prototype fonctionnel du robot auto-stabilisé.​
+    . Programme ESP32 avec contrôle en boucle fermée.​
+    . Rapport sur les tests et l'optimisation des algorithmes.​
+    . Documentation technique détaillée.​
+
+
